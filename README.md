@@ -33,6 +33,8 @@ ON E.EmployeeID = O.EmployeeID\
 GROUP BY LastName\
 ORDER BY COUNT(*) DESC
 
+Last name of the employee witht the most orders = Peacock
+
 
 c)What product was ordered the most by customers in Germany?
 
