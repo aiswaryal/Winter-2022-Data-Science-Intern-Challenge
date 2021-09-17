@@ -26,5 +26,13 @@ Number of order shipped by Speedy Express = 149
 
 
 b)What is the last name of the employee with the most orders?
+
+SELECT * FROM [Employees] E\
+INNER JOIN [Orders] O\
+ON E.EmployeeID = O.EmployeeID\
+GROUP BY LastName\
+ORDER BY COUNT(*) DESC
+
+
 c)What product was ordered the most by customers in Germany?
 
