@@ -18,13 +18,11 @@ a)How many orders were shipped by Speedy Express in total?
 
 
 SELECT Distinct(O.OrderID) FROM [OrderDetails] OD\
-INNER JOIN [Orders] O
+INNER JOIN [Orders] O\
+ON OD.OrderID = O.OrderID\
+WHERE O.ShipperID = 1;\
 
-ON OD.OrderID = O.OrderID
-
-WHERE O.ShipperID = 1;
-
-Number of Records : 54
+Number of order shipped by Speedy Express = 54
 
 
 b)What is the last name of the employee with the most orders?
