@@ -38,3 +38,16 @@ Last name of the employee witht the most orders = Peacock
 
 c)What product was ordered the most by customers in Germany?
 
+SELECT P.ProductID, P.ProductName, P.Quantity, C.Country\
+FROM [ProdOrderDetails] P\
+JOIN CustomOrder C\
+ON C.OrderID = P.OrderID\
+WHERE Country = 'Germany'\
+GROUP BY ProductID\
+ORDER BY SUM(Quantity) DESC, ProductName ASC
+
+
+
+
+
+
