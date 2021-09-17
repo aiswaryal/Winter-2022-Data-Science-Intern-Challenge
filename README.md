@@ -17,8 +17,8 @@ Question 2: For this question you’ll need to use SQL. Follow this link to acce
 a)How many orders were shipped by Speedy Express in total?
 
 
-SELECT Distinct(O.OrderID) FROM [OrderDetails] OD 
-INNER JOIN [Orders] O\
+SELECT Distinct(O.OrderID) FROM [OrderDetails] OD\
+INNER JOIN [Orders] O
 
 ON OD.OrderID = O.OrderID
 
