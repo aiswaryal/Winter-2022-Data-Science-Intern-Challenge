@@ -20,7 +20,7 @@ a)How many orders were shipped by Speedy Express in total?
 SELECT Distinct(O.OrderID) FROM [OrderDetails] OD\
 INNER JOIN [Orders] O\
 ON OD.OrderID = O.OrderID\
-WHERE O.ShipperID = 1;\
+WHERE O.ShipperID = 1;
 
 Number of order shipped by Speedy Express = 54
 
