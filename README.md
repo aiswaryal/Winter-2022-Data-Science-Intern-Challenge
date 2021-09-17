@@ -46,6 +46,7 @@ WHERE Country = 'Germany'\
 GROUP BY ProductID\
 ORDER BY SUM(Quantity) DESC, ProductName ASC
 
+Product ordered the most by customers in Germany is Boston Crab Meat.
 
 
 
